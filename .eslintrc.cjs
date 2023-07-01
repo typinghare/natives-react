@@ -6,25 +6,26 @@ module.exports = {
         es2021: true,
     },
     extends: [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:react/recommended",
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:react/recommended',
     ],
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
         },
         ecmaVersion: 12,
-        sourceType: "module",
+        sourceType: 'module',
     },
-    plugins: ["react"],
+    plugins: ['react'],
     rules: {
-        indent: ["error", 4],
-        "react/react-in-jsx-scope": "off",
+        indent: ['error', 4],
+        'react/react-in-jsx-scope': 'off',
+        '@typescript-eslint/no-namespace': 'off',
     },
     settings: {
         react: {
-            version: "detect",
+            version: 'detect',
         },
     },
 }
